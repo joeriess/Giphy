@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum Type {
+public enum Type: String {
     
-    case gif
+    case gif = "gif"
 }

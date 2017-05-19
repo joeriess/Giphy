@@ -32,6 +32,10 @@
 		FA0C2F021ECE84F20056F5F9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C2F011ECE84F20056F5F9 /* User.swift */; };
 		FA0C2F041ECE874D0056F5F9 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C2F031ECE874D0056F5F9 /* Type.swift */; };
 		FA0C2F061ECE88F60056F5F9 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C2F051ECE88F60056F5F9 /* Image.swift */; };
+		FA0C2F081ECF91FD0056F5F9 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C2F071ECF91FD0056F5F9 /* Client.swift */; };
+		FA0C2F0A1ECF95000056F5F9 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C2F091ECF95000056F5F9 /* Meta.swift */; };
+		FA0C2F0C1ECFB61D0056F5F9 /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C2F0B1ECFB61D0056F5F9 /* ResourceType.swift */; };
+		FA0C2F0E1ECFB6DC0056F5F9 /* ArgoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C2F0D1ECFB6DC0056F5F9 /* ArgoExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		FA0C2F011ECE84F20056F5F9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA0C2F031ECE874D0056F5F9 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		FA0C2F051ECE88F60056F5F9 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		FA0C2F071ECF91FD0056F5F9 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		FA0C2F091ECF95000056F5F9 /* Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		FA0C2F0B1ECFB61D0056F5F9 /* ResourceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceType.swift; sourceTree = "<group>"; };
+		FA0C2F0D1ECFB6DC0056F5F9 /* ArgoExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgoExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +144,9 @@
 				FA0C2EFC1ECE83500056F5F9 /* Types */,
 				FA0C2EC21ECE82100056F5F9 /* Giphy.h */,
 				FA0C2EC31ECE82100056F5F9 /* Info.plist */,
+				FA0C2F071ECF91FD0056F5F9 /* Client.swift */,
+				FA0C2F0B1ECFB61D0056F5F9 /* ResourceType.swift */,
+				FA0C2F0D1ECFB6DC0056F5F9 /* ArgoExtension.swift */,
 			);
 			path = Giphy;
 			sourceTree = "<group>";
@@ -181,6 +192,7 @@
 				FA0C2F011ECE84F20056F5F9 /* User.swift */,
 				FA0C2F031ECE874D0056F5F9 /* Type.swift */,
 				FA0C2F051ECE88F60056F5F9 /* Image.swift */,
+				FA0C2F091ECF95000056F5F9 /* Meta.swift */,
 			);
 			name = Types;
 			sourceTree = "<group>";
@@ -300,9 +312,13 @@
 			files = (
 				FA0C2F001ECE84340056F5F9 /* Rating.swift in Sources */,
 				FA0C2EFE1ECE83F70056F5F9 /* Gif.swift in Sources */,
+				FA0C2F081ECF91FD0056F5F9 /* Client.swift in Sources */,
 				FA0C2F021ECE84F20056F5F9 /* User.swift in Sources */,
 				FA0C2F041ECE874D0056F5F9 /* Type.swift in Sources */,
+				FA0C2F0A1ECF95000056F5F9 /* Meta.swift in Sources */,
 				FA0C2F061ECE88F60056F5F9 /* Image.swift in Sources */,
+				FA0C2F0E1ECFB6DC0056F5F9 /* ArgoExtension.swift in Sources */,
+				FA0C2F0C1ECFB61D0056F5F9 /* ResourceType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +558,7 @@
 				FA0C2ED51ECE82100056F5F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA0C2ED61ECE82100056F5F9 /* Build configuration list for PBXNativeTarget "GiphyTests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +567,7 @@
 				FA0C2ED81ECE82100056F5F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
