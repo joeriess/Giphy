@@ -74,6 +74,7 @@ public final class Client {
                         return JSONSerialization.deserializeJSON(data).mapError { Error.networkError($0.error) }
                     }
                     .attemptMap { json in
+                        print(json)
                         if response.statusCode == 404 {
                             return .failure(.doesNotExist)
                         }
