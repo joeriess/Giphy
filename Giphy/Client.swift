@@ -69,7 +69,6 @@ public final class Client {
             .mapError { Error.networkError($0.error) }
             .flatMap(.concat) { data, response -> SignalProducer<Gif, Error> in
                 let response = response as! HTTPURLResponse
-                let headers = response.allHeaderFields as! [String: String]
                 return SignalProducer
                     .attempt {
                         return JSONSerialization.deserializeJSON(data).mapError { Error.networkError($0.error) }
@@ -90,5 +89,5 @@ public final class Client {
                     }
         }
     }
-    
+
 }
