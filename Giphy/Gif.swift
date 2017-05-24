@@ -48,10 +48,10 @@ extension Gif: Decodable {
     
     public static func decode(_ json: JSON) -> Decoded<Gif> {
         return curry(Gif.init)
-            <^> (json <| "type" >>- toType)
-            <*> json <| "id"
-            <*> (json <| "url" >>- toURL)
-            <*> json <|? "username"
+            <^> (json <| ["data", "type"] >>- toType)
+            <*> json <| ["data", "id"]
+            <*> (json <| ["data", "url"] >>- toURL)
+            <*> json <|? ["data", "username"]
     }
     
 }

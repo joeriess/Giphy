@@ -59,6 +59,7 @@ public final class Client {
     }
     
     public func random() -> SignalProducer<Gif, Error> {
+        print("Hi")
         return fetch(URLRequest(url: URL(string: "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC")!))
     }
     
